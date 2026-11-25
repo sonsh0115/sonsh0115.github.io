@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunghyun Son | Curriculum Vitae</title>
+<meta name="description" content="Sunghyun Son, Ph.D. candidate in the Program in Plasma Physics, Princeton University (PPPL).">
+<style>
+  :root {
+    --text: #1f2328;
+    --muted: #5b6470;
+    --line: #e3e6ea;
+    --accent: #1f4e79;
+    --bg: #ffffff;
+    --bg-soft: #f6f8fa;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.55;
+    font-size: 16px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+  header.top { padding: 56px 0 28px; border-bottom: 1px solid var(--line); }
+  header.top h1 { margin: 0 0 4px; font-size: 2.1rem; letter-spacing: -0.01em; }
+  header.top .role { margin: 0; color: var(--muted); font-size: 1.05rem; }
+  header.top .links { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 0.95rem; }
+
+  nav.sections {
+    position: sticky; top: 0; z-index: 5;
+    background: rgba(255,255,255,0.94);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
+  }
+  nav.sections .wrap { display: flex; flex-wrap: wrap; gap: 4px 20px; padding-top: 10px; padding-bottom: 10px; font-size: 0.9rem; }
+  nav.sections a { color: var(--muted); }
+  nav.sections a:hover { color: var(--accent); text-decoration: none; }
+
+  section { padding: 32px 0 8px; }
+  section h2 {
+    margin: 0 0 14px; padding-bottom: 6px;
+    font-size: 1.15rem; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--accent); border-bottom: 2px solid var(--accent);
+  }
+
+  .entry { display: grid; grid-template-columns: 1fr auto; gap: 2px 20px; margin-bottom: 18px; }
+  .entry .title { font-weight: 600; }
+  .entry .date { color: var(--muted); font-size: 0.92rem; text-align: right; white-space: nowrap; }
+  .entry .sub { grid-column: 1 / -1; color: var(--muted); font-size: 0.95rem; }
+  .entry ul { grid-column: 1 / -1; margin: 6px 0 0; padding-left: 1.2rem; }
+  .entry li { margin: 2px 0; }
+
+  dl.skills { margin: 0; display: grid; grid-template-columns: 150px 1fr; gap: 8px 16px; }
+  dl.skills dt { font-weight: 600; }
+  dl.skills dd { margin: 0; }
+
+  section h3 { margin: 22px 0 10px; font-size: 1rem; color: var(--text); }
+  section h3:first-of-type { margin-top: 4px; }
+  ol.pubs, ul.talks, ul.plain { margin: 0; padding-left: 1.4rem; }
+  ol.pubs li, ul.talks li, ul.plain li { margin-bottom: 10px; }
+  .me { font-weight: 700; }
+  .tag {
+    display: inline-block; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.03em;
+    padding: 1px 7px; margin-right: 6px; border-radius: 10px;
+    background: var(--bg-soft); border: 1px solid var(--line); color: var(--muted);
+    vertical-align: 1px;
+  }
+
+  footer { margin: 40px 0 56px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85rem; }
+
+  @media (max-width: 600px) {
+    header.top { padding-top: 36px; }
+    .entry { grid-template-columns: 1fr; }
+    .entry .date { text-align: left; }
+    dl.skills { grid-template-columns: 1fr; gap: 2px; }
+    dl.skills dd { margin-bottom: 10px; }
+  }
+
+  @media print {
+    nav.sections, .noprint { display: none; }
+    header.top { padding-top: 0; }
+    body { font-size: 11pt; }
+    section { page-break-inside: avoid; }
+    a { color: inherit; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <h1>Sunghyun Son</h1>
+    <p class="role">Ph.D. Candidate, Program in Plasma Physics, Department of Astrophysical Sciences, Princeton University</p>
+    <div class="links">
+      <!-- EDIT: contact and profile links. Add Google Scholar / ORCID / GitHub here when ready. -->
+      <a href="mailto:sson2@pppl.gov">sson2@pppl.gov</a>
+      <span>Princeton Plasma Physics Laboratory (PPPL)</span>
+      <!-- <a href="https://scholar.google.com/...">Google Scholar</a> -->
+      <!-- <a href="https://orcid.org/...">ORCID</a> -->
+      <!-- <a href="CV_SHSon.pdf" class="noprint">Download PDF</a> -->
+    </div>
+  </div>
+</header>
+
+<nav class="sections">
+  <div class="wrap">
+    <a href="#education">Education</a>
+    <a href="#research">Research</a>
+    <a href="#skills">Skills</a>
+    <a href="#publications">Publications</a>
+    <a href="#presentations">Presentations</a>
+    <a href="#awards">Awards</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<!-- ============ EDUCATION ============ -->
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="entry">
+    <div class="title">Princeton University</div>
+    <div class="date"></div>
+    <div class="sub">Program in Plasma Physics</div>
+  </div>
+  <div class="entry">
+    <div class="title">Ph.D. Candidate</div>
+    <div class="date">Jul. 2023 – present</div>
+  </div>
+  <div class="entry">
+    <div class="title">Master of Arts</div>
+    <div class="date">Sep. 2025</div>
+  </div>
+
+  <div class="entry" style="margin-top:26px">
+    <div class="title">Seoul National University</div>
+    <div class="date"></div>
+  </div>
+  <div class="entry">
+    <div class="title">Master of Science in Nuclear Engineering</div>
+    <div class="date">Sep. 2020 – Aug. 2023</div>
+    <div class="sub">GPA 4.12/4.3, Major GPA 4.12/4.3</div>
+  </div>
+  <div class="entry">
+    <div class="title">Bachelor of Science in Nuclear Engineering</div>
+    <div class="date">Mar. 2017 – Jun. 2020</div>
+    <div class="sub">GPA 3.97/4.3 (Summa Cum Laude), Major GPA 4.15/4.3 &middot; Best Undergraduate Thesis Award</div>
+  </div>
+</section>
+
+<!-- ============ RESEARCH ============ -->
+<section id="research">
+  <h2>Research Experience</h2>
+
+  <div class="entry">
+    <div class="title">Ion Source Development Intern</div>
+    <div class="date">May 2025 – Aug. 2025</div>
+    <div class="sub">Applied Materials Inc.</div>
+    <ul>
+      <li>Design and optimization of next-generation plasma sources for ion implantation</li>
+      <li>Development of advanced plasma diagnostics for high-current implanters</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="title">Graduate Research Assistant</div>
+    <div class="date">Jul. 2023 – present</div>
+    <div class="sub">Princeton Plasma Physics Laboratory (PPPL) &middot; Advisors: Dr. Yevgeny Raitses, Prof. Hantao Ji</div>
+    <ul>
+      <li>In-situ diagnostic of channel erosion in Hall thrusters</li>
+      <li>Investigation of anomalous ion plume divergence in Hall thrusters</li>
+      <li>Investigation of ion dynamics in electron-beam-generated E×B plasmas</li>
+      <li>Vectorized particle-in-cell (PIC) simulation of magnetic reconnection</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="title">Graduate Research Assistant</div>
+    <div class="date">Sep. 2020 – Jun. 2023</div>
+    <div class="sub">Seoul National University</div>
+    <ul>
+      <li><b>Kinetic simulations of narrow-gap discharge:</b> study of breakdown physics inside a narrow gap of a processing chamber via experiments and simulation; PIC simulation of narrow-gap breakdown with complex parameters</li>
+      <li><b>Plasma uniformity controller for semiconductor etching:</b> diagnosed plasma uniformity in a CCP source to investigate transport phenomena; quantified the correlation between plasma parameter uniformity and processing result uniformity; developed a process uniformity controller that adjusts plasma parameters to control process results</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="title">Undergraduate Research Intern</div>
+    <div class="date">Mar. 2019 – Aug. 2020</div>
+    <div class="sub">Seoul National University</div>
+    <ul>
+      <li>Trained in manufacturing and use of plasma diagnostic tools</li>
+      <li>Used emissive probe (EP) and laser-induced fluorescence (LIF) to investigate sheath dynamics</li>
+      <li>Investigated a cathode sheath model of glow discharge, considering secondary electron emission</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ TEACHING (uncomment and fill in) ============
+<section id="teaching">
+  <h2>Teaching Experience</h2>
+  <div class="entry">
+    <div class="title">Teaching Assistant, [course name]</div>
+    <div class="date">[semester, year]</div>
+    <div class="sub">Seoul National University, Department of Nuclear Engineering</div>
+    <ul>
+      <li>[what you did]</li>
+    </ul>
+  </div>
+</section>
+-->
+
+<!-- ============ SKILLS ============ -->
+<section id="skills">
+  <h2>Skills for Plasma Research</h2>
+  <dl class="skills">
+    <dt>Plasma sources</dt>
+    <dd>Capacitively coupled plasma (CCP), inductively coupled plasma (ICP), filament discharge, DC glow discharge, Penning discharge. Diagnostics projects on both inert (Ar, Ne, He) and reactive (SF₆, O₂) gas plasmas.</dd>
+
+    <dt>Probes</dt>
+    <dd>Langmuir (with RF compensation), emissive, capacitive, B-dot, and cut-off probes</dd>
+
+    <dt>Optics</dt>
+    <dd>Optical emission spectroscopy (OES) for EEDF; laser-induced fluorescence (LIF) for IVDF</dd>
+
+    <dt>Other diagnostics</dt>
+    <dd>Retarding field energy analyzer (RFEA) for IEDF; SiO₂ coupon etching for etch rate</dd>
+
+    <dt>Simulation</dt>
+    <dd>CFD-ACE+ (general fluid simulation), EDIPIC-2D (PIC), VPIC (PIC)</dd>
+  </dl>
+</section>
+
+<!-- ============ PUBLICATIONS ============ -->
+<section id="publications">
+  <h2>Publications</h2>
+  <!-- Newest first inside each group. To add a paper, copy one <li> and paste it at the top of the right group.
+       Wrap your own name in <span class="me">. Preprints carry <span class="tag">Preprint</span>.
+       Add a DOI/arXiv link with <a href="...">DOI</a>. Full list: Google Scholar. -->
+
+  <h3>First-author</h3>
+  <ol class="pubs" reversed>
+    <li><span class="tag">Preprint</span><span class="me">Son, S.H.</span>, Stanier, A., Daughton, W., Yoo, J., Rhee, T., Ji, H., “Revisiting the MRX electron current sheet width with semi-collisional kinetic simulations at hydrogen mass ratio”, <i>arXiv</i>:<a href="https://arxiv.org/abs/2609.01793">2609.01793</a> (2026).</li>
+    <li><span class="me">Son, S.H.</span>, Romadanov, I., Chopra, N.S., Raitses, Y., “Planar laser-induced fluorescence system for spatiotemporal ion velocity distribution function measurements”, <i>Plasma Sources Science and Technology</i> 34(10), 105003 (2025).</li>
+    <li><span class="me">Son, S.H.</span>, Go, G., Villafana, W., Kaganovich, I.D., Khrabrov, A., Lee, H.C., …, “Unintended gas breakdowns in narrow gaps of advanced plasma sources for semiconductor fabrication industry”, <i>Applied Physics Letters</i> 123(23) (2023).</li>
+    <li><span class="me">Son, S.H.</span>, Park, J., Chung, K.J., “2D kinetic simulation of partially magnetized capacitively coupled plasma sources”, <i>Journal of the Semiconductor &amp; Display Technology</i> 22(1), 118–123 (2023).</li>
+  </ol>
+
+  <h3>Co-author</h3>
+  <ol class="pubs" reversed>
+    <li>Yoo, J., Yamada, M., Rhee, T., Ji, H., Le, A., Phan, T., <span class="me">Son, S.H.</span>, Robbins, A., “Cross-scale observations of expanding bifurcated current sheets in fast magnetic reconnection”, <i>Nature Communications</i>, in press (2026).</li>
+    <li><span class="tag">Preprint</span>Xia, B., Dong, C., Li, B., Qin, Y., Xie, Z., <span class="me">Son, S.H.</span>, Stanier, A.J., Yoo, J., Ji, H., Diallo, A., Ding, H., Wise, J., “Toward a multimodal foundation model for plasma state reconstruction”, <i>arXiv</i>:<a href="https://arxiv.org/abs/2610.15076">2610.15076</a> (2026).</li>
+    <li><span class="tag">Preprint</span>Ji, H., Yoo, J., Shi, P., Jung, E., Maheshwari, K., Robbins, A., <span class="me">Son, S.</span>, Stanier, A., …, “The FLARE facility”, <i>arXiv</i>:<a href="https://arxiv.org/abs/2608.17332">2608.17332</a> (2026).</li>
+    <li>Jung, E., Bardóczi, L., Austin, M.E., <span class="me">Son, S.H.</span>, Reiman, A.H., “Reconstruction of magnetic island electron temperature in mixed second and third harmonic electron cyclotron emission conditions”, <i>Review of Scientific Instruments</i> 95(6) (2024).</li>
+    <li>Romadanov, I., Mishra, I., Kiviat, J., <span class="me">Son, S.H.</span>, Benjadol, B., Ottaviano, A., …, Keidar, M., “In-situ diagnostic of channel erosion in Hall thrusters”, <i>AIAA SCITECH 2024 Forum</i>, 0691 (2024).</li>
+    <li>Lee, H., Kim, N.K., Lee, M.G., Kwon, J.W., <span class="me">Son, S.H.</span>, Bae, N., Park, T., Park, S., …, Kim, G.H., “Investigation of ion collision effect on electrostatic sheath formation in weakly ionized and weakly collisional plasma”, <i>Plasma Sources Science and Technology</i> 31(8), 084006 (2022).</li>
+    <li>Lim, S., Lee, I., Lee, H., <span class="me">Son, S.H.</span>, Kim, G.H., “Analysis of Si etch uniformity of very high frequency driven-capacitively coupled Ar/SF₆ plasmas”, <i>Journal of the Semiconductor &amp; Display Technology</i> 20(4), 72–77 (2021).</li>
+    <li>Song, J., Kim, J., Kim, D.C., Song, M.Y., Yoon, J.S., <span class="me">Son, S.H.</span>, Kwon, J.W., Ryu, S., …, Kim, G.H., “Influence of wall conditioning state on Ar plasma emission in a processing chamber”, <i>2020 IEEE International Conference on Plasma Science (ICOPS)</i>, 95 (2020).</li>
+  </ol>
+</section>
+
+<!-- ============ PRESENTATIONS ============ -->
+<section id="presentations">
+  <h2>Presentations</h2>
+  <!-- Newest first. Tag is Oral / Poster / Invited. Entries without a tag are talks given by a co-author. -->
+  <ul class="talks">
+    <li><span class="tag">Oral</span><span class="me">Son, S.H.</span> et al., “Revisiting the MRX electron current sheet width with semi-collisional kinetic simulations at hydrogen mass ratio”, 68th Annual Meeting of the APS Division of Plasma Physics, Chicago, IL, USA (2026).</li>
+    <li><span class="tag">Poster</span><span class="me">Son, S.H.</span> et al., “Role of electron-neutral collisions on partially ionized magnetic reconnection”, 68th Annual Meeting of the APS Division of Plasma Physics, Chicago, IL, USA (2026).</li>
+    <li><span class="tag">Poster</span><span class="me">Son, S.H.</span>, Stanier, A.J., Rhee, T., Daughton, W.S., Yoo, J., Ji, H., “Revisiting electron diffusion region in Magnetic Reconnection Experiments (MRX) via fully kinetic cylindrical particle-in-cell simulation”, 67th Annual Meeting of the APS Division of Plasma Physics, Long Beach, CA, USA (2025).</li>
+    <li>Ji, H., Yoo, J., Shi, P., …, <span class="me">Son, S.H.</span>, …, “Introducing a new DOE collaborative research facility: FLARE”, 67th Annual Meeting of the APS Division of Plasma Physics, Long Beach, CA, USA (2025).</li>
+    <li>Raitses, Y., Chopra, N.S., Romadanov, I., Devin, E.G., Smolyakov, A., <span class="me">Son, S.</span>, “E×B plasmas generated by e-beams and non-thermal electrons for materials processing applications”, 78th Annual Gaseous Electronics Conference (2025).</li>
+    <li><span class="tag">Oral</span><span class="me">Son, S.H.</span> et al., “Space and phase-resolved ion velocity distribution function measurements in electron beam generated E×B plasma”, AVS 71st International Symposium &amp; Exhibition, Charlotte, NC, USA (2025).</li>
+    <li><span class="tag">Oral</span><span class="me">Son, S.H.</span> et al., “Unintended gas discharges in plasma sources for semiconductor fabrication”, 77th Annual Gaseous Electronics Conference, San Diego, CA, USA (2024).</li>
+    <li><span class="tag">Poster</span><span class="me">Son, S.H.</span> et al., “Measurements of two-dimensional ion velocity distributions in electron beam generated E×B plasma”, 66th Annual Meeting of the APS Division of Plasma Physics, Atlanta, GA, USA (2024).</li>
+    <li><span class="tag">Oral</span>Villafana, V., Kaganovich, I., <span class="me">Son, S.H.</span>, “Mechanism of unintended breakdowns in advanced plasma sources in the semiconductor industry”, 66th Annual Meeting of the APS Division of Plasma Physics, Atlanta, GA, USA (2024).</li>
+    <li><span class="tag">Oral</span><span class="me">Son, S.H.</span> et al., “Unintended gas breakdowns in narrow gaps of advanced plasma sources for semiconductor fabrication industry”, 65th Annual Meeting of the APS Division of Plasma Physics, Denver, CO, USA (2023).</li>
+    <li><span class="tag">Oral</span><span class="me">Son, S.H.</span> et al., “Kinetic simulations on narrow gap discharge”, 64th Annual Meeting of the APS Division of Plasma Physics, Spokane, WA, USA (2022).</li>
+    <li><span class="tag">Invited</span>Kim, J.Y., <span class="me">Son, S.H.</span> et al., “Kinetic simulations on narrow gap discharge”, 75th Annual Gaseous Electronics Conference, Sendai, Japan (2022).</li>
+    <li><span class="tag">Oral</span><span class="me">Son, S.H.</span> et al., “Analysis of Si etch uniformity of very high frequency driven-capacitively coupled Ar/SF₆ plasmas”, 62nd Meeting of the Korean Vacuum Society, virtual (2022).</li>
+    <li><span class="tag">Oral</span><span class="me">Son, S.H.</span> et al., “Development of virtual metrology using plasma information variables to predict plasma density distribution in capacitively coupled argon plasma”, 61st Meeting of the Korean Vacuum Society, virtual (2021).</li>
+    <li><span class="tag">Oral</span><span class="me">Son, S.H.</span> et al., “Characteristics of plasma density distribution in focus ring region of VHF narrow gap CCP etching reactor”, 8th International Conference on Microelectronics and Plasma Technology, virtual (2021).</li>
+  </ul>
+</section>
+
+<!-- ============ AWARDS ============ -->
+<section id="awards">
+  <h2>Awards, Fellowships &amp; Honors</h2>
+
+  <div class="entry"><div class="title">Seoul National University Alumni Association (SNUAA) Fellowship</div><div class="date">2025</div></div>
+  <div class="entry"><div class="title">SK Hynix Global Fellowship</div><div class="date">2025</div></div>
+  <div class="entry"><div class="title">AVS Dorothy M. and Earl S. Hoffman Travel Grant</div><div class="date">2025</div><div class="sub">American Vacuum Society</div></div>
+  <div class="entry"><div class="title">First Year Fellowship in Natural Sciences and Engineering</div><div class="date">2023</div><div class="sub">Princeton University</div></div>
+  <div class="entry"><div class="title">Brain Korea (BK) Scholarships</div><div class="date">2021, 2022</div></div>
+  <div class="entry"><div class="title">Best Undergraduate Thesis Award</div><div class="date">2020</div><div class="sub">Department of Nuclear Engineering, SNU</div></div>
+  <div class="entry"><div class="title">Hyundai Motor Chung Mongkoo Scholarship</div><div class="date">2019, 2020</div></div>
+  <div class="entry"><div class="title">Honor Society ‘STEM’ (academic excellence)</div><div class="date">2019</div><div class="sub">College of Engineering, SNU</div></div>
+  <div class="entry"><div class="title">Undergraduate Student President</div><div class="date">2019</div><div class="sub">Department of Nuclear Engineering, SNU</div></div>
+  <div class="entry"><div class="title">Samsung Welfare Foundation Mentoring Scholarship</div><div class="date">2018</div></div>
+  <div class="entry"><div class="title">Scholarships for academic excellence</div><div class="date">2017, 2019</div><div class="sub">Seoul National University</div></div>
+  <div class="entry"><div class="title">Honor Physics &amp; Calculus (excellence in entrance exam)</div><div class="date">2017</div><div class="sub">Seoul National University</div></div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">Last updated: November 2026</div>
+</footer>
+
+</body>
+</html>
