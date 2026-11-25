@@ -174,12 +174,15 @@
   <div class="entry">
     <div class="title">Graduate Research Assistant</div>
     <div class="date">Jul. 2023 – present</div>
-    <div class="sub">Princeton Plasma Physics Laboratory (PPPL) &middot; Advisors: Dr. Yevgeny Raitses, Prof. Hantao Ji</div>
+    <div class="sub">Princeton Plasma Physics Laboratory (PPPL) &middot; Advisor: Prof. Hantao Ji</div>
     <ul>
+      <li>Explained an 18-year-old puzzle: MRX electron current sheets are 3–5× thicker than kinetic simulations predicted. Developed cylindrical semi-collisional PIC simulations at realistic mass ratio and an analytical electron-orbit model that reproduce the measured width (~6–7 electron skin depths).</li>
+      <li>AI for magnetic reconnection (DOE Genesis Mission, with NVIDIA): designed the plasmoid-detection pipeline (magnetic-probe array + fast camera; plasmoid count, location, size) and a three-tier simulation training strategy; generated ~1,080 VPIC training runs.</li>
+      <li>Ported a cylindrical particle-in-cell (PIC) code to VPIC 2.0 (C++/Kokkos) for GPU/CPU and validated it against the legacy code; one GPU node delivers 15–20× more particle pushes per hour than one CPU node.</li>
+      <li>Built and verified a kinetic electron–neutral collision operator in VPIC (elastic, excitation, ionization).</li>
+      <li>Built a planar laser-induced fluorescence diagnostic that turns Doppler-resolved camera images into 2D, phase-resolved ion velocity distributions; revealed radial ion outflow and anomalous ion heating in an electron-beam-generated E×B plasma.</li>
       <li>In-situ diagnostic of channel erosion in Hall thrusters</li>
       <li>Investigation of anomalous ion plume divergence in Hall thrusters</li>
-      <li>Investigation of ion dynamics in electron-beam-generated E×B plasmas</li>
-      <li>Vectorized particle-in-cell (PIC) simulation of magnetic reconnection</li>
     </ul>
   </div>
 
@@ -188,8 +191,9 @@
     <div class="date">Sep. 2020 – Jun. 2023</div>
     <div class="sub">Seoul National University</div>
     <ul>
-      <li><b>Kinetic simulations of narrow-gap discharge:</b> study of breakdown physics inside a narrow gap of a processing chamber via experiments and simulation; PIC simulation of narrow-gap breakdown with complex parameters</li>
-      <li><b>Plasma uniformity controller for semiconductor etching:</b> diagnosed plasma uniformity in a CCP source to investigate transport phenomena; quantified the correlation between plasma parameter uniformity and processing result uniformity; developed a process uniformity controller that adjusts plasma parameters to control process results</li>
+      <li>Quantified how plasma-parameter uniformity in a CCP etch source drives etch uniformity; built a controller that tunes plasma parameters to set the etch result.</li>
+      <li>Built a virtual-metrology model that predicts plasma density distribution in capacitively coupled Ar plasma from measured plasma variables.</li>
+      <li>Showed with experiments and 2D PIC that plasma leaking into the gas-injection gaps of an ICP etch source pulls breakdown voltage below the Paschen curve, and that wall erosion lowers it further.</li>
     </ul>
   </div>
 
@@ -237,6 +241,12 @@
 
     <dt>Simulation</dt>
     <dd>CFD-ACE+ (general fluid simulation), EDIPIC-2D (PIC), VPIC (PIC)</dd>
+
+    <dt>Programming &amp; HPC</dt>
+    <dd>Python, C++ (Kokkos), MPI, Git, Linux; GPU/CPU clusters with Slurm (Princeton Tiger, NERSC Perlmutter)</dd>
+
+    <dt>Languages</dt>
+    <dd>Korean (native), English (fluent), Chinese (elementary)</dd>
   </dl>
 </section>
 
@@ -249,7 +259,7 @@
 
   <h3>First-author</h3>
   <ol class="pubs" reversed>
-    <li><span class="tag">Preprint</span><span class="me">Son, S.H.</span>, Stanier, A., Daughton, W., Yoo, J., Rhee, T., Ji, H., “Revisiting the MRX electron current sheet width with semi-collisional kinetic simulations at hydrogen mass ratio”, <i>arXiv</i>:<a href="https://arxiv.org/abs/2609.01793">2609.01793</a> (2026).</li>
+    <li><span class="me">Son, S.H.</span>, Stanier, A., Daughton, W., Yoo, J., Rhee, T., Ji, H., “Revisiting the MRX electron current sheet width with semi-collisional kinetic simulations at hydrogen mass ratio”, <i>Physics of Plasmas</i>, under review (2026); <i>arXiv</i>:<a href="https://arxiv.org/abs/2609.01793">2609.01793</a>.</li>
     <li><span class="me">Son, S.H.</span>, Romadanov, I., Chopra, N.S., Raitses, Y., “Planar laser-induced fluorescence system for spatiotemporal ion velocity distribution function measurements”, <i>Plasma Sources Science and Technology</i> 34(10), 105003 (2025).</li>
     <li><span class="me">Son, S.H.</span>, Go, G., Villafana, W., Kaganovich, I.D., Khrabrov, A., Lee, H.C., …, “Unintended gas breakdowns in narrow gaps of advanced plasma sources for semiconductor fabrication industry”, <i>Applied Physics Letters</i> 123(23) (2023).</li>
     <li><span class="me">Son, S.H.</span>, Park, J., Chung, K.J., “2D kinetic simulation of partially magnetized capacitively coupled plasma sources”, <i>Journal of the Semiconductor &amp; Display Technology</i> 22(1), 118–123 (2023).</li>
@@ -258,7 +268,7 @@
   <h3>Co-author</h3>
   <ol class="pubs" reversed>
     <li>Yoo, J., Yamada, M., Rhee, T., Ji, H., Le, A., Phan, T., <span class="me">Son, S.H.</span>, Robbins, A., “Cross-scale observations of expanding bifurcated current sheets in fast magnetic reconnection”, <i>Nature Communications</i>, in press (2026).</li>
-    <li><span class="tag">Preprint</span>Xia, B., Dong, C., Li, B., Qin, Y., Xie, Z., <span class="me">Son, S.H.</span>, Stanier, A.J., Yoo, J., Ji, H., Diallo, A., Ding, H., Wise, J., “Toward a multimodal foundation model for plasma state reconstruction”, <i>arXiv</i>:<a href="https://arxiv.org/abs/2610.15076">2610.15076</a> (2026).</li>
+    <li><span class="tag">Preprint</span>Xia, B., Dong, C., Li, B., Qin, Y., Xie, Z., <span class="me">Son, S.H.</span>, Stanier, A.J., Yoo, J., Ji, H., Diallo, A., Ding, H., Wise, J., “Toward a multimodal foundation model for plasma state reconstruction”, <i>NeurIPS 2026 Workshop</i> (2026); <i>arXiv</i>:<a href="https://arxiv.org/abs/2610.15076">2610.15076</a>.</li>
     <li><span class="tag">Preprint</span>Ji, H., Yoo, J., Shi, P., Jung, E., Maheshwari, K., Robbins, A., <span class="me">Son, S.</span>, Stanier, A., …, “The FLARE facility”, <i>arXiv</i>:<a href="https://arxiv.org/abs/2608.17332">2608.17332</a> (2026).</li>
     <li>Jung, E., Bardóczi, L., Austin, M.E., <span class="me">Son, S.H.</span>, Reiman, A.H., “Reconstruction of magnetic island electron temperature in mixed second and third harmonic electron cyclotron emission conditions”, <i>Review of Scientific Instruments</i> 95(6) (2024).</li>
     <li>Romadanov, I., Mishra, I., Kiviat, J., <span class="me">Son, S.H.</span>, Benjadol, B., Ottaviano, A., …, Keidar, M., “In-situ diagnostic of channel erosion in Hall thrusters”, <i>AIAA SCITECH 2024 Forum</i>, 0691 (2024).</li>
